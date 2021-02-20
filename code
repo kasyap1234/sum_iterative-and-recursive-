@@ -1,0 +1,19 @@
+my_list=[1,2,34,5,6]
+def add(my_list):
+    sum=0
+    for items in my_list:
+        sum=sum + items
+    return sum
+print(add(my_list))
+def add_recursive(my_list):
+    if len(my_list)==1:
+        return my_list[0]
+    else:
+        return my_list[0] + add_recursive(my_list[1:])
+print(add_recursive(my_list))
+def add_squares(my_list):
+    sum=0
+    for i in my_list:
+         sum=sum + i*i
+    return sum
+print(add_squares(my_list))
